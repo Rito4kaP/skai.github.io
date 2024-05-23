@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="fonts/stylesheet.css" />
+    <link rel="stylesheet" href="main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>СКАИ - прокат инвентаря</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-wrapper">
+        <div class="header-logo">
+          <a href="#" class="logo-link">
+            <img src="img/logo.svg" alt="logo" class="header-logo__pic"
+          /></a>
+        </div>
+        <nav class="header-menu">
+          <div class="header-menu__item">
+            <a href="#prokat" class="header-menu__link">Прокат инвентаря</a>
+          </div>
+          <div class="header-menu__item">
+            <a href="#news" class="header-menu__link">Новости</a>
+          </div>
+          <div class="header-menu__item">
+            <a href="#tab" class="header-menu__link">Сервис</a>
+          </div>
+          <div class="header-menu__item">
+            <a href="#blog" class="header-menu__link">Блог</a>
+          </div>
+          <div class="header-menu__item">
+            <a href="#contacts" class="header-menu__link">Контакты</a>
+          </div>
+        </nav>
+        <div class="header-wrapper__text">Ежедневно 10.00-22.00</div>
+        <div class="header-wrapper__phone">
+          <a href="#">
+            <img
+              src="img/teenyicons_phone-solid.svg"
+              alt="телефон"
+              class="header-wrapper__phonepic"
+          /></a>
+        </div>
+        <img src="img/burger.svg" alt="menu" class="header-menu__burger burger-btn" />
+      </div>
+    </div>
+
+    <!-- BURGER MENU -->
+    <div class="burger-menu">
+      <ul class="b-menu">
+        <img src="img/close-menu.svg" alt="close" class="close-burger" />
+        
+        <li class="b-menu__item">
+          <a href="#prokat" class="b-menu__link bur1">Прокат инвентаря</a>
+        </li>
+        <li class="b-menu__item">
+          <a href="#news" class="b-menu__link bur2">Новости</a>
+        </li>
+        <li class="b-menu__item">
+          <a href="#tab" class="b-menu__link bur3">Сервис</a>
+        </li>
+        <li class="b-menu__item">
+          <a href="#blog" class="b-menu__link bur4">Блог</a>
+        </li>
+        <li class="b-menu__item">
+          <a href="#contacts" class="b-menu__link bur4">Контакты</a>
+        </li>
+        <li class="header-wrapper__phone b-menu__item">
+          <a href="#">
+            <img
+              src="img/teenyicons_phone-solid.svg"
+              alt="телефон"
+              class="header-wrapper__phonepic"
+          /></a>
+          </li>
+          <div class="header-logo-bur">
+            <a href="#" class="logo-link">
+              <img src="img/logo.svg" alt="logo" class="burger-pic"
+            /></a>
+          </div>
+      </ul>
+    </div>
+
+    <!-- FORMA NA KNOPKU -->
+    <div class="fon" id="modal">
+      <div class="wrapper">
+        <img src="img/ic_close.svg" alt="close" class="btnClose modal__close" />
+        <div class="form-box">
+          <p>Заявка</p>
+          <form name="zayavka" action="#">
+            <div class="input-box">
+              <input type="text" required placeholder="Имя" />
+            </div>
+            <div class="input-box">
+              <input type="text" required id="tel" placeholder="Телефон" />
+              <div class="input-box">
+                <input type="email" required placeholder="Почта" />
+              </div>
+              <div class="input-box">
+                <textarea
+                  rows="4"
+                  placeholder="Что бы вы хотели арендовать?"
+                  rows="6"
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="rent">
+      <div class="rent-wrapper">
+        <div class="rent-text">
+          <h1 class="rent-text__h1">
+            Аренда спортивного инвентаря и снаряжения для
+            <span>активного отдыха</span>
+          </h1>
+          <div class="rent-text__text">
+            Пункт по прокату спортивного инвентаря в Перми «СКАИ» — это широкий
+            выбор экипировки и оборудования для занятия спортом на улице.
+          </div>
+        </div>
+        <button class="rent-btn" id="open-modal__btn">Оставить заявку</button>
+      </div>
+      <div class="rent-advantages">
+        <div class="rent-advantages__item">
+          <img class="rent-advantages__icon" src="img/1advant.svg" />
+          <div class="rent-advantages__text">
+            <h3 class="rent-advantages__h3">Выгодные условия</h3>
+            <div class="rent-advantages__underh">
+              Прокат велосипедов, удобное расположение
+            </div>
+          </div>
+        </div>
+        <div class="rent-advantages__item">
+          <img class="rent-advantages__icon" src="img/2advant.svg" />
+          <div class="rent-advantages__text">
+            <h3 class="rent-advantages__h3">Приемлемые цены</h3>
+            <div class="rent-advantages__underh">
+              Прокат велосипедов, удобное расположение
+            </div>
+          </div>
+        </div>
+        <div class="rent-advantages__item">
+          <img class="rent-advantages__icon" src="img/3advant.svg" />
+          <div class="rent-advantages__text">
+            <h3 class="rent-advantages__h3">Удобное месторасположение</h3>
+            <div class="rent-advantages__underh">
+              Прокат велосипедов, удобное расположение
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hire">
+      <div class="hire__nav" id="prokat">
+        Прокат:
+        <a class="hire__nav-link" href="#" data-filter="summer"
+          >Летняя экипировка
+          <img src="img/summer.svg" alt="sun" />
+        </a>
+        <a class="hire__nav-link" href="#" data-filter="winter"
+          >Зимняя экипировка
+          <img src="img/winter.svg" alt="snow" />
+        </a>
+        <a class="hire__nav-link" href="#" data-filter="all">Всё</a>
+      </div>
+      <div class="cards">
+        <div class="cards__col" data-cat="winter">
+          <div class="card">
+            <img src="img/snow.png" class="card__img" alt="" />
+            <div class="card__content">
+              <div class="card__cat">
+                Сноуборды
+                <div class="card__podz">
+                  В наличии все размеры, разные типы креплений, доски для
+                  новичков
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards__col" data-cat="summer">
+          <div class="card">
+            <img src="img/roliki.png" class="card__img" alt="" />
+            <div class="card__content">
+              <div class="card__cat">
+                Роликовые коньки
+                <div class="card__podz">
+                  Широкая размерная линейка, в том числе детские.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards__col" data-cat="winter">
+          <div class="card">
+            <img src="img/gor.png" class="card__img" alt="" />
+            <div class="card__content">
+              <div class="card__cat">
+                Горные лыжи
+                <div class="card__podz">
+                  Широкая линейка размеров, в том числе детские
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards__col" data-cat="summer">
+          <div class="card">
+            <img src="img/velo.png" class="card__img" alt="" />
+            <div class="card__content">
+              <div class="card__cat">
+                Велосипеды
+                <div class="card__podz">
+                  Прокат велосипедов, удобное местоположение
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards__col" data-cat="winter">
+          <div class="card">
+            <img src="img/begov.png" class="card__img" alt="" />
+            <div class="card__content">
+              <div class="card__cat">
+                Беговые лыжи
+                <div class="card__podz">
+                  Пластиковые и полупластиковые лыжи для катания свободным и
+                  классическим стилем
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards__col" data-cat="winter">
+          <div class="card">
+            <img src="img/invent.png" class="card__img" alt="" />
+            <div class="card__content">
+              <div class="card__cat">
+                Зимний инвентарь
+                <div class="card__podz">
+                  Снегокаты, санки, тьюбы и другое для активного отдыха
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards__col" data-cat="summer">
+          <div class="card">
+            <img src="img/samok.png" class="card__img" alt="" />
+            <div class="card__content">
+              <div class="card__cat">
+                Самокаты
+                <div class="card__podz">
+                  Электрические самокаты для скоростных прогулок
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards__col" data-cat="winter">
+          <div class="card">
+            <img src="img/ekip.png" class="card__img" alt="" />
+            <div class="card__content">
+              <div class="card__cat">
+                Зимняя экипировка
+                <div class="card__podz">
+                  Лыжные палки, очки, шлемы, ботинки и тд
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cards__col" data-cat="summer">
+          <div class="card">
+            <img src="img/det.png" class="card__img" alt="" />
+            <div class="card__content">
+              <div class="card__cat">
+                Детские электромобили
+                <div class="card__podz">
+                  Порадуйте своего ребенка поездкой на электромашинке!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info" id="tab">
+      <div class="info-wrapper">
+        <div class="info-title">Дополнительные услуги</div>
+        <div class="info-header">
+          <div class="info-header-tab active">Ski-сервис</div>
+          <div class="info-header-tab">Велосервис</div>
+          <div class="info-header-tab">Велозапчасти</div>
+          <div class="info-header-tab">Б/у велосипеды</div>
+        </div>
+        <div class="info-tabcontent fade">
+          <div class="description">
+            У нас есть всё, что необходимо для подготовки и обслуживания
+            инвентаря и обеспечения вашего комфорта на склоне. Наши опытные
+            мастера готовы провести тщательную настройку и ремонт лыж и
+            сноубордов, чтобы вы могли насладиться безопасным и комфортным
+            катанием.
+          </div>
+          <div class="photo">
+            <img src="img/ski.png" alt="Massage" />
+          </div>
+        </div>
+        <div class="info-tabcontent fade">
+          <div class="description">
+            У нас есть всё, что необходимо для подготовки и обслуживания
+            инвентаря и обеспечения вашего комфорта на склоне. Наши опытные
+            мастера готовы провести тщательную настройку и ремонт лыж и
+            сноубордов, чтобы вы могли насладиться безопасным и комфортным
+            катанием.
+          </div>
+          <div class="photo">
+            <img src="img/velos.png" alt="Massage" />
+          </div>
+        </div>
+        <div class="info-tabcontent fade">
+          <div class="description">
+            У нас есть всё, что необходимо для подготовки и обслуживания
+            инвентаря и обеспечения вашего комфорта на склоне. Наши опытные
+            мастера готовы провести тщательную настройку и ремонт лыж и
+            сноубордов, чтобы вы могли насладиться безопасным и комфортным
+            катанием.
+          </div>
+          <div class="photo">
+            <img src="img/zap.png" alt="Massage" />
+          </div>
+        </div>
+        <div class="info-tabcontent fade">
+          <div class="description">
+            У нас есть всё, что необходимо для подготовки и обслуживания
+            инвентаря и обеспечения вашего комфорта на склоне. Наши опытные
+            мастера готовы провести тщательную настройку и ремонт лыж и
+            сноубордов, чтобы вы могли насладиться безопасным и комфортным
+            катанием.
+          </div>
+          <div class="photo">
+            <img src="img/bu.png" alt="Massage" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sliderNew" id="news">
+      <div class="news-head">
+        <div class="news-h2">Новости</div>
+        <div class="slider-buttons">
+          <button class="slider__nav slider__nav-left">
+            <img src="img/arrow-up.svg" alt="next" />
+          </button>
+          <button class="slider__nav slider__nav-right">
+            <img src="img/arrow-up-right.svg" alt="prev" />
+          </button>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="sliderNew-item fade">
+          <div class="slider-grid">
+            <div class="slider-grid__item">
+              <p class="item-type">Объявление</p>
+              <h3 class="news__h3">
+                Роликовые коньки временно недоступны для проката
+              </h3>
+              <div class="news__text">
+                В связи с ремонтными работами в помещении проката роликовые
+                коньки временно недоступны для проката.
+              </div>
+              <div class="news__date">23.04.23</div>
+            </div>
+            <div class="slider-grid__item">
+              <p class="item-type">Объявление</p>
+              <h3 class="news__h3">
+                Роликовые коньки в пункте проката на шоссе Космонавтов
+              </h3>
+              <div class="news__text">
+                В связи с ремонтными работами в помещении проката роликовые
+                коньки временно недоступны для проката.
+              </div>
+              <div class="news__date">23.04.23</div>
+            </div>
+            <div class="slider-grid__item">
+              <p class="item-type">Новость</p>
+              <h3 class="news__h3">
+                Российский легкоатлет Вручинский дисквалифицирован на 4 года
+                за допинг
+              </h3>
+              <div class="news__text">
+                «Всероссийская федерация легкой атлетики...
+              </div>
+              <div class="news__date">23.04.23</div>
+            </div>
+          </div>
+        </div>
+        <div class="sliderNew-item fade">
+          <div class="slider-grid">
+            <div class="slider-grid__item">
+              <p class="item-type">Новость</p>
+              <h3 class="news__h3">Роликовые коньки</h3>
+              <div class="news__text">
+                В связи с ремонтными работами в помещении проката роликовые
+                коньки временно недоступны для проката.
+              </div>
+              <div class="news__date">23.04.23</div>
+            </div>
+            <div class="slider-grid__item">
+              <p class="item-type">Новость</p>
+              <h3 class="news__h3">
+                Сноуборды в пункте проката на шоссе Космонавтов
+              </h3>
+              <div class="news__text">
+                В связи с ремонтными работами в помещении проката роликовые
+                коньки временно недоступны для проката.
+              </div>
+              <div class="news__date">20.04.24</div>
+            </div>
+            <div class="slider-grid__item">
+              <p class="item-type">Новость</p>
+              <h3 class="news__h3">
+                Российский легкоатлет занял 2 место на Чемпионате Мира
+              </h3>
+              <div class="news__text">
+                «Всероссийская федерация легкой атлетики...
+              </div>
+              <div class="news__date">23.04.23</div>
+            </div>
+          </div>
+        </div>
+        <div class="sliderNew-item fade">
+          <div class="slider-grid">
+            <div class="slider-grid__item">
+              <p class="item-type">Объявление</p>
+              <h3 class="news__h3">
+                Роликовые коньки временно недоступны для проката
+              </h3>
+              <div class="news__text">
+                В связи с ремонтными работами в помещении проката роликовые
+                коньки временно недоступны для проката.
+              </div>
+              <div class="news__date">23.04.23</div>
+            </div>
+            <div class="slider-grid__item">
+              <p class="item-type">Объявление</p>
+              <h3 class="news__h3">
+                Роликовые коньки в пункте проката на шоссе Космонавтов
+              </h3>
+              <div class="news__text">
+                В связи с ремонтными работами в помещении проката роликовые
+                коньки временно недоступны для проката.
+              </div>
+              <div class="news__date">23.04.23</div>
+            </div>
+            <div class="slider-grid__item">
+              <p class="item-type">Новость</p>
+              <h3 class="news__h3">
+                Российский легкоатлет Вручинский дисквалифицирован на 4 года
+                за допинг
+              </h3>
+              <div class="news__text">
+                «Всероссийская федерация легкой атлетики...
+              </div>
+              <div class="news__date">13.04.23</div>
+            </div>
+          </div>
+        </div>
+        <div class="sliderNew-item fade">
+          <div class="slider-grid">
+            <div class="slider-grid__item">
+              <p class="item-type">Новость</p>
+              <h3 class="news__h3">
+                Роликовые коньки временно недоступны для проката
+              </h3>
+              <div class="news__text">
+                В связи с ремонтными работами в помещении проката роликовые
+                коньки временно недоступны для проката.
+              </div>
+              <div class="news__date">12.04.23</div>
+            </div>
+            <div class="slider-grid__item">
+              <p class="item-type">Объявление</p>
+              <h3 class="news__h3">
+                Роликовые коньки в пункте проката на шоссе Космонавтов
+              </h3>
+              <div class="news__text">
+                В связи с ремонтными работами в помещении проката роликовые
+                коньки временно недоступны для проката.
+              </div>
+              <div class="news__date">28.07.23</div>
+            </div>
+            <div class="slider-grid__item">
+              <p class="item-type">Новость</p>
+              <h3 class="news__h3">
+                Российский легкоатлет Вручинский дисквалифицирован на 4 года
+                за допинг
+              </h3>
+              <div class="news__text">
+                «Всероссийская федерация легкой атлетики...
+              </div>
+              <div class="news__date">04.04.23</div>
+            </div>
+          </div>
+        </div>
+        <div class="prev">&lt;</div>
+        <div class="next">&gt;</div>
+      </div>
+      <div class="sliderNew-dots">
+        <div class="dot dot-active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+
+    <div class="blog" id="blog">
+      <div class="blog-wrapper">
+        <div class="blog-h2">Блог</div>
+        <div class="blog-grid">
+          <div class="blog-grid__item item1">
+            <img src="img/kids.png" alt="kids" class="blog-grid__img" />
+            <h3 class="blog-grid__h3">Как выбрать детские ролики напрокат?</h3>
+          </div>
+          <div class="blog-grid__item item2">
+            <img src="img/rollers.png" alt="rollers" class="blog-grid__img" />
+            <h3 class="blog-grid__h3">
+              Почему следует использовать специальные носки для роликов?
+            </h3>
+          </div>
+          <div class="blog-grid__item item3">
+            <img src="img/board.png" alt="snowboards" class="blog-grid__img" />
+            <h3 class="blog-grid__h3">Что входит в горнолыжный инвентарь?</h3>
+          </div>
+          <div class="blog-grid__item item4">
+            <img src="img/velozap.png" alt="kids" class="blog-grid__img" />
+            <h3 class="blog-grid__h3">
+              Самостоятельная починка велосипеда или велосервис?
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="faq">
+      <div class="faq-wrapper">
+        <div class="faq-text">
+          <div class="faq-text__h2">Часто задаваемые вопросы</div>
+          Ответы на них вы найдете здесь
+        </div>
+        <div id="accordion" class="accordion">
+          <p class="accordion-head">
+            Можно ли забронировать спортивный инвентарь заранее?
+          </p>
+          <div class="accordion-block">
+            Да, вы можете забронировать спортивный инвентарь заранее, чтобы
+            гарантировать его наличие в нужный вам день и время.
+          </div>
+          <p class="accordion-head">
+            Как долго можно арендовать спортивный инвентарь?
+          </p>
+          <div class="accordion-block">
+            Вы можете арендовать спортивный инвентарь на несколько часов, дни
+            или даже недели, в зависимости от ваших потребностей.
+          </div>
+          <p class="accordion-head">
+            Есть ли скидки для постоянных клиентов или групп?
+          </p>
+          <div class="accordion-block">
+            Мы предоставляем различные скидки для постоянных клиентов, групп и
+            корпоративных заказов. Уточните информацию у наших менеджеров.
+          </div>
+          <p class="accordion-head">
+            Что делать в случае повреждения или потери арендованного
+            оборудования?
+          </p>
+          <div class="accordion-block">
+            В случае повреждения или потери арендованного оборудования,
+            необходимо немедленно сообщить об этом нашим сотрудникам. Условия
+            возмещения ущерба указаны в договоре аренды.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <div class="form-wrapper">
+        <div class="form-wrapper-left">
+          <div class="form-wrapper__h2">Получите бесплатную консультацию!</div>
+          Оставьте номер телефона и наш  менеджер проконсультирует вас по всем
+          вопросам!
+          <form action="#" class="form-wrapper__form">
+            <input
+              type="text"
+              required
+              placeholder="Телефон"
+              class="form-text"
+            />
+            <button type="submit" class="forma-btn">Отправить</button>
+          </form>
+          <div class="form-wrapper__soglas">
+            Нажимая на кнопку "Отправить", я даю свое
+            <a>согласие на обработку персональных данных</a>
+          </div>
+        </div>
+        <div class="form-wrapper-right">
+          Или напишите нам в удобный мессенджер
+          <div class="form__tg"><a href="#">Написать в Telegram</a></div>
+          <div class="form__wa"><a href="#">Написать в WhatsApp</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer" id="contacts">
+      <div class="footer-wrapper">
+        <div class="footer-info">
+          <img src="img/flogo.png" alt="СКАИ" class="footer-logo" />
+          <div class="footer-contacts">
+            <div class="footer__grafic">
+              <img src="img/dot.svg" alt="dot" />
+              Ежедневно 10.00-22.00
+            </div>
+            <div class="footer__adres">
+              <img src="img/adres.svg" alt="адрес" />
+              Шоссе Космонавтов 158/4
+            </div>
+          </div>
+        </div>
+        <div class="footer-menu">
+          <div class="footer-menu__item">
+            <a href="#prokat">Прокат инвентаря</a>
+          </div>
+          <div class="footer-menu__item"><a href="#news">Новости</a></div>
+          <div class="footer-menu__item"><a href="#blog"> Блог</a></div>
+          <div class="footer-menu__item"><a href="#tab">Сервис</a></div>
+          <div class="footer-menu__item"><a href="#">Прайс-лист</a></div>
+          <div class="footer-menu__item">
+            <a href="#contacts">Контакты</a>
+          </div>
+        </div>
+        <div class="footer-copiright">© 2007-2023 ООО «Шторм»</div>
+      </div>
+    </div>
+    <script src="filter.js"></script>
+    <script src="burger.js"></script>
+    <script src="tab.js"></script>
+    <script src="modal.js"></script>
+    <script src="slider.js"></script>
+    <script src="accord.js"></script>
+  </body>
+</html>

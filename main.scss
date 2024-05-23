@@ -1,0 +1,17 @@
+*{
+    scroll-behavior: smooth;
+   
+}
+body{
+    background: #f4f6f8;
+}
+@import "./blocks/_header.scss";
+@import "./blocks/_firstblock.scss";
+@import "./blocks/_hire.scss";
+@import "./blocks/_dop.scss";
+@import "./blocks/_modal.scss";
+@import "./blocks/_slider.scss";
+@import "./blocks/_blog.scss";
+@import "./blocks/_faq.scss";
+@import "./blocks/_form.scss";
+@import "./blocks/_footer.scss";
