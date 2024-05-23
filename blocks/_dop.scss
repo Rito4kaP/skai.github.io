@@ -1,0 +1,119 @@
+:root {
+    --font-family: "Onest", sans-serif;
+  }
+  .info {
+    padding-top: 57px;
+    background-image: url("img/fon.svg");
+    background-repeat: no-repeat;
+    background-color: #f4f6f8;
+    padding-bottom: 120px;
+  }
+  .info-wrapper {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .info-title {
+    font-family: onest;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 102%;
+    color: #161c24;
+    margin-bottom: 25px;
+  }
+  .info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .info-header-tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 19vw;
+    height: 50px;
+    background: #fff;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 102%;
+    color: #5b7dde;
+    transition: all 400ms;
+    &:hover{
+      background: #f1f1f1;
+      cursor: pointer;
+    }
+  }
+  .description {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .info .active {
+    background: #dedede;
+    
+  }
+  .photo{
+      width: 80vw;
+      img{
+          width: 80vw;
+      }
+  }
+  .info .hide {
+      display: none;
+      
+  }
+  .info .show {
+      display: block;
+      transition: all 500ms;
+      transform: scale(1);
+  }
+  .fade {
+      animation: fade 2.5s;
+      -webkit-animation: fade 2.5s;
+  }
+
+
+
+
+@keyframes fade {
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@media(max-width:900px){
+  .info-header-tab {
+    font-size: 16px;}
+    .info{
+      padding-top: 60px;
+      padding-bottom: 80px;
+    }
+}
+@media(max-width:500px){
+  .info-header {
+    flex-wrap: wrap;
+    width: 95vw;
+    margin: 0 auto;
+  }
+  .info-wrapper{
+    width: 95vw;
+  }
+  .info{
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .info-header-tab{
+    width: 45vw;
+    margin-bottom: 20px;
+  }
+  .description{
+    font-size: 16px;
+  }
+}

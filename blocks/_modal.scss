@@ -1,0 +1,118 @@
+:root {
+  --font-family: "Onest", sans-serif;
+}
+.wrapper {
+  width: 414px;
+  top: 0px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 24px;
+  position: relative;
+  transform: scale(0);
+  transition: transform 0.5s ease, height 0.3s ease;
+}
+.fon {
+  position: fixed;
+  top: 0;
+  margin-top: 0px;
+  width: 100%;
+  min-height: 300vh;
+  display: flex;
+  justify-content: center;
+  background: rgba(33, 33, 39, 0.7);
+  z-index: 5;
+  transform: scale(0);
+}
+.fon.active {
+  transform: scale(1);
+  .wrapper{transform: scale(1);}
+}
+.wrapper.active {
+  transform: scale(1);
+}
+.form-box p {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 102%;
+  color: #5b7dde;
+  text-align: center;
+  z-index: 6;
+  margin-bottom: 22px;
+}
+.form-box {
+  width: 352px;
+  margin: 40px auto;
+}
+.input-box input {
+  width: 344px;
+  height: 37px;
+  font-family: onest;
+  margin-bottom: 13px;
+  background: #e4e4e4;
+  padding-left: 22px;
+  border-radius: 15px;
+  border: 0px solid var(--text-light, #8b8fbb);
+  font-size: 20px;
+}
+.input-box input[type="text"]::placeholder {
+  color: #949494;
+  font-family: onest;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+input[type="email"]::placeholder, textarea::placeholder{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 102%;
+  color: #949494;
+}
+.form-box .btn {
+  border-radius: 15px;
+  width: 344px;
+  height: 43px;
+  border: 0;
+  background: #5b7dde;
+  flex-shrink: 0;
+  margin-top: 14px;
+  color: var(--text-white, #fff);
+  font-family: onest;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  transition: 0.7s all;
+}
+.form-box .btn:hover {
+  background: #42729f;
+}
+.btnClose {
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+}
+textarea{
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 102%;
+  color: #949494;
+  width: 344px;
+  font-family: onest;
+  margin-bottom: 13px;
+  background: #e4e4e4;
+  padding-left: 22px;
+  border-radius: 15px;
+  border: 0px solid var(--text-light, #8b8fbb);
+  resize: none;
+  padding-top: 8px;
+  padding-right: 8px;
+}
